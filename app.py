@@ -42,7 +42,14 @@ st.markdown(
       [data-testid="stSidebar"] {{ background: #EDF2F4; border-right: 1px solid {BORDER}; }}
       [data-testid="stSidebar"] h1, [data-testid="stSidebar"] h2, [data-testid="stSidebar"] h3 {{ color: {NAVY}; }}
       .block-container {{ padding-top: 1.65rem; padding-bottom: 2.5rem; max-width: 1500px; }}
-      h1, h2, h3 {{ font-family: 'Manrope', sans-serif; letter-spacing: -0.035em; color: {NAVY}; }}
+      h1, h2, h3, .stMarkdown h1, .stMarkdown h2, .stMarkdown h3,
+      [data-testid="stMarkdownContainer"] h1,
+      [data-testid="stMarkdownContainer"] h2,
+      [data-testid="stMarkdownContainer"] h3 {{
+        font-family: 'Manrope', sans-serif;
+        letter-spacing: -0.035em;
+        color: {NAVY} !important;
+      }}
       h1 {{ font-size: 2.05rem !important; font-weight: 800 !important; }}
       h2 {{ font-size: 1.28rem !important; font-weight: 750 !important; }}
       h3 {{ font-size: 1.03rem !important; font-weight: 700 !important; }}
@@ -50,9 +57,9 @@ st.markdown(
       .eyebrow {{ color: {TEAL}; text-transform: uppercase; letter-spacing: .13em; font-size: .72rem; font-weight: 700; margin-bottom: .45rem; }}
       .hero {{ padding: 1.45rem 1.65rem; background: {WHITE}; border: 1px solid {BORDER}; border-radius: 16px; margin-bottom: 1.1rem; }}
       .hero-title {{ font-family: 'Manrope', sans-serif; color: {NAVY}; font-size: 1.9rem; line-height: 1.15; font-weight: 800; letter-spacing: -.04em; margin: 0 0 .45rem 0; }}
-      .hero-sub {{ color: {MUTED}; font-size: .96rem; margin: 0; max-width: 900px; }}
+      .hero-sub {{ color: {MUTED} !important; opacity: 1 !important; font-size: .96rem; margin: 0; max-width: 900px; }}
       .section-head {{ display:flex; align-items:center; justify-content:space-between; margin: .4rem 0 .25rem 0; }}
-      .section-note {{ color: {MUTED}; font-size: .82rem; margin-top: -.2rem; margin-bottom: .7rem; }}
+      .section-note {{ color: {MUTED} !important; opacity: 1 !important; font-size: .82rem; margin-top: -.2rem; margin-bottom: .7rem; }}
       .metric-card {{ background: {WHITE}; border: 1px solid {BORDER}; border-radius: 14px; padding: 1rem 1.1rem; min-height: 116px; }}
       .metric-label {{ color: {MUTED}; font-size: .78rem; font-weight: 600; margin-bottom: .45rem; }}
       .metric-value {{ color: {NAVY}; font-family: 'Manrope', sans-serif; font-size: 1.8rem; font-weight: 800; line-height: 1.1; }}
